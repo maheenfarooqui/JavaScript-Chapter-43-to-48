@@ -15,6 +15,14 @@ function clickMe(a,b){
 });
 }
 
+// 3. Display 10 student records in table and each row should contain a delete button. 
+// If you click on a button to delete a record, entire row should be deleted.
+function deleteRow(e){
+    e.parentElement.parentElement.style.display = "none";
+    
+
+}
+
 // 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
 function bulbOn(e){
     e.src = "https://www.w3schools.com/js/pic_bulbon.gif";

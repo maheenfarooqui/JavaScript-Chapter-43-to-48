@@ -1,36 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chapter 43 to 48</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <div class="container">
-     <button onclick="aBox()">click</button>
-   <div class="card-wrapper">
-  <div class="img-card">
-    <img src="https://pngimg.com/uploads/iphone_14/iphone_14_PNG13.png" onclick="clickMe('iPhone 11','$499')" alt="iPhone">
-  </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="aBox()">click</button>
+      <div class="card-wrapper">
+        <div class="img-card">
+          <img
+            src="https://pngimg.com/uploads/iphone_14/iphone_14_PNG13.png"
+            onclick="clickMe('iPhone 11', '$499')"
+            alt="iPhone"
+          />
+        </div>
 
-  <div class="img-card">
-    <img src="https://pngimg.com/uploads/iphone_13/iphone_13_PNG32.png" onclick="clickMe('iPhone 13','$599')" alt="iPhone">
-  </div>
+        <div class="img-card">
+          <img
+            src="https://pngimg.com/uploads/iphone_13/iphone_13_PNG32.png"
+            onclick="clickMe('iPhone 13', '$599')"
+            alt="iPhone"
+          />
+        </div>
 
-  <div class="img-card">
-    <img src="https://pngimg.com/uploads/iphone_14/iphone_14_PNG13.png" onclick="clickMe('iPhone 14','$699')" alt="iPhone">
-  </div>
+        <div class="img-card">
+          <img
+            src="https://pngimg.com/uploads/iphone_14/iphone_14_PNG13.png"
+            onclick="clickMe('iPhone 14', '$699')"
+            alt="iPhone"
+          />
+        </div>
 
-  <div class="img-card">
-    <img src="https://pngimg.com/uploads/iphone_12/iphone_12_PNG24.png" onclick="clickMe('iPhone 14 Pro','$999')" alt="iPhone">
-  </div>
-</div>
-<div  class="img-card">
-   <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" id="bulb" onmouseover="bulbOn(this)" onmouseout="bulbOff(this)">
-</div>
-   </div>
+        <div class="img-card">
+          <img
+            src="https://pngimg.com/uploads/iphone_12/iphone_12_PNG24.png"
+            onclick="clickMe('iPhone 14 Pro', '$999')"
+            alt="iPhone"
+          />
+        </div>
+      </div>
+      <div class="img-card">
+        <img
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          alt=""
+          id="bulb"
+          onmouseover="bulbOn(this)"
+          onmouseout="bulbOff(this)"
+        />
+      </div>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>10</td>
+            <td>15</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sara</td>
+            <td>9</td>
+            <td>14</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ahmed</td>
+            <td>8</td>
+            <td>13</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Ayesha</td>
+            <td>10</td>
+            <td>15</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Hassan</td>
+            <td>7</td>
+            <td>12</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Fatima</td>
+            <td>9</td>
+            <td>14</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Usman</td>
+            <td>8</td>
+            <td>13</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Noor</td>
+            <td>6</td>
+            <td>11</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Zain</td>
+            <td>7</td>
+            <td>12</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Mariam</td>
+            <td>10</td>
+            <td>15</td>
+            <td>
+              <button class="del-btn" onclick="deleteRow(this)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
